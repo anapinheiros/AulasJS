@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/png" ref="logo1.png">
+    <title> Desafio 3 - JavaScript</title>
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web, frontend">
+    <meta name="author" content="Laura França">
+</head>
+
+<body>
+    <h1>Integrando os recursos de interatividade do JS </h1>
+    <hr>
+    <h2></h2>
+    <script>
+        window.alert("Seja bem vindo a página de operação");
+        let numero = window.prompt("Digite o primeiro número");
+        numero = parseInt(numero)
+        let numero2 = window.prompt("Digite o segundo número");
+        numero2 = parseInt(numero2)
+        let operacao = window.prompt("Qual operação, +, -, * ou / ?");
+        let resultado = 0
+        if (operacao == "+") {
+            resultado = numero + numero2;
+        } else if (operacao == "-") {
+            resultado = numero - numero2
+        } else if (operacao == "*") {
+            resultado = numero * numero2;
+        } else if (operacao == "/"){
+            resultado = numero / numero2;
+        }else{
+            
+        }
+        document.getElementsByTagName("h2")[0].innerText = "O resultado da operção é: " + resultado
+
+    </script>
+
+</body>
+
+</html>
