@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="icon/png" href="logo1.png">
-    <title>Aula 2- Introdulção ao JavaScript</title>
+    <title>desafio1- Introdulção ao JavaScript</title>
     <meta name="description" content="...">
     <meta name="keywords" content="sites, web, frontend">
     <meta name="author" content="Laura França">
 </head>
 
 <body>
-    <h1>Exercícios de JS da aula 1</h1>
+    <h1>Desafio 1</h1>
     <hr>
    <div>
     <p>Laura</p>
@@ -25,7 +25,7 @@
         console.log(tags_p);
         let tag_p_1 = tags_p[0]
         console.log(tag_p_1);
-        tag_p_1.style.backgroundColor="purple";
+        tag_p_1.style.backgroundColor="green";
         tag_p_1.style.color="white";
         tag_p_1.style.textAlign="center";
         tag_p_1.style.fontSize="25pt";
@@ -39,12 +39,26 @@
 
         let tag_p_3 = tags_p[2]
         console.log(tag_p_3);
-        tag_p_3.style.backgroundColor="pink";
-        tag_p_3.style.color="gray";
+        tag_p_3.style.backgroundColor="purple";
+        tag_p_3.style.color="red";
         tag_p_3.style.textAlign="center";
         tag_p_3.style.fontSize="15pt";
         
         tag_p_3.innerText = "A turma do DEV é espetacular demais!"
+
+        const tags_div = document.getElementsByTagName('div')
+        console.log(tags_div);
+        let tag_div_1 = tags_div[0]
+        console.log(tag_div_1);
+        tag_div_1.style.backgroundColor="yellow";
+        tag_div_1.style.color="orange";
+
+        const tags_body = document.getElementsByTagName('body')
+        console.log(tags_body);
+        let tag_body_1 = tags_body[0]
+        console.log(tag_body_1);
+        tag_body_1.style.backgroundColor="pink";
+
     </script>
 </body>
 
